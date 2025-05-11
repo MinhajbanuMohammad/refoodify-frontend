@@ -1,0 +1,146 @@
+/* src/components/About/about.css */
+
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.about-text .highlight {
+  color: #ff6600;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 
+    color 0.3s ease, 
+    transform 0.15s ease,
+    text-shadow 0.3s ease;
+}
+
+.about-text .highlight:hover {
+  color: #ff8533;
+  text-shadow: 0 0 6px rgba(255, 102, 0, 0.5);
+}
+
+/* Click feedback */
+.about-text .highlight:active {
+  transform: scale(0.95);
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.7);
+}
+
+
+.about-text p {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.contact-button {
+  padding: 0.75rem 2rem;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 51, 102, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.contact-button:hover {
+  background-color: #001f4d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 31, 77, 0.4);
+}
+
+.contact-button:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(0, 31, 77, 0.3);
+}
+
+.contact-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 51, 102, 0.4);
+}
+
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* === New extended about section === */
+.about-extended {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.about-extended h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.step {
+  flex: 1 1 200px;
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step h3 {
+  color: #ff6600;
+  margin-bottom: 0.75rem;
+}
+
+.step p {
+  font-family: 'Caveat', cursive;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

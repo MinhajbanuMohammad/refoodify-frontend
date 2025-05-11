@@ -1,0 +1,99 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top right, #9333ea, #d8b4fe);
+}
+
+/* Section Container */
+.auth-section {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #6b21a8;
+}
+
+/* Tabs */
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #f3f4f6;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #6b7280;
+  border-radius: 6px 6px 0 0;
+}
+
+.tab:hover {
+  background-color: #e5e7eb;
+}
+
+.tab.active {
+  background-color: #9333ea;
+  color: white;
+  font-weight: 600;
+}
+
+/* Form */
+.auth-forms {
+  padding: 1rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #6b21a8;
+}
+
+.auth-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: #9333ea;
+}
+
+/* Button */
+.auth-form button {
+  background: linear-gradient(to right, #9333ea, #ec4899);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.auth-form button:hover {
+  box-shadow: 0 4px 15px rgba(147, 51, 234, 0.4);
+}

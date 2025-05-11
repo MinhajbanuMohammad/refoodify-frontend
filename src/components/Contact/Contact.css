@@ -1,0 +1,114 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+}
+
+.contact-left {
+  background: #f3f4f6;
+  padding: 2.5rem;
+  flex: 1;
+}
+
+.contact-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.contact-left h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: black;
+}
+
+.contact-right {
+  background: #1f2937;
+  color: white;
+  padding: 2.5rem;
+  flex: 1;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact-right input,
+.contact-right textarea {
+  background: #374151;
+  color: white;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contact-right button {
+  background: #facc15;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.3);
+}
+
+.contact-right button:hover {
+  background: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(251, 191, 36, 0.4);
+}
+
+.contact-right button:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 8px rgba(251, 191, 36, 0.3);
+}
+
+.contact-right button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.5);
+}
+.contact-right button:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
